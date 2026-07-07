@@ -8,7 +8,6 @@ index.html              ← Hauptseite
 changelog.html          ← Versionshistorie (gestylt)
 datenschutz.html        ← Datenschutzerklärung
 404.html                ← Fehlerseite
-intern-fw-2026.html     ← Interner Schlüssel-Manager (nicht verlinkt)
 favicon.svg             ← Browser-Icon
 og-image.png            ← Social-Media-Vorschaubild
 robots.txt              ← Crawler-Steuerung

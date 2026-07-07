@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /intern-fw-2026.html
 
 Sitemap: https://flow-werk.de/sitemap.xml
