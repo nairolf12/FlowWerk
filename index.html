@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>finFlow – Buchhaltung für Kleingewerbe | FlowWerk</title>
 <meta name="description" content="finFlow: lokale Buchhaltungssoftware für Kleingewerbe. Rechnungen, Angebote, Mahnwesen, EÜR-Export – ohne Cloud, ohne Abo, ohne Datenweitergabe.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://flow-werk.de/">
+<meta property="og:title" content="finFlow – Buchhaltung für Kleingewerbe | FlowWerk">
+<meta property="og:description" content="Lokale Buchhaltungssoftware für Kleingewerbe. Rechnungen, Angebote, Mahnwesen, EÜR – komplett offline, ohne Abo. Einmal kaufen, dauerhaft nutzen.">
+<meta property="og:image" content="https://flow-werk.de/og-image.png">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="finFlow – Buchhaltung für Kleingewerbe">
+<meta name="twitter:description" content="Lokale Buchhaltungssoftware. Komplett offline, ohne Abo, einmal kaufen.">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -307,7 +317,7 @@ footer{border-top:1px solid #1E2D42;padding:72px 0 0;background:#060A12}
 </head>
 <body>
 <script>
-const V={v:"3.3.0",date:"Juli 2026",dlMac:"downloads/finFlow-Installer-3_3_0.dmg",dlWin:"downloads/finFlow-Setup-3_3_0.exe",cl:"CHANGELOG.md",mail:"info@flow-werk.de",pubName:"Florian Haußmann",pubStreet:"Haldestra\u00dfe 8",pubCity:"72644 Oberboihingen",ust:"Gem\u00e4\u00df \u00a719 UStG wird keine Umsatzsteuer ausgewiesen."};
+const V={v:"3.3.0",date:"Juli 2026",dlMac:"downloads/finFlow-Installer-3_3_0.dmg",dlWin:"downloads/finFlow-Setup-3_3_0.exe",cl:"changelog.html",mail:"info@flow-werk.de",pubName:"Florian Haußmann",pubStreet:"Haldestra\u00dfe 8",pubCity:"72644 Oberboihingen",ust:"Gem\u00e4\u00df \u00a719 UStG wird keine Umsatzsteuer ausgewiesen."};
 
 function ckUpdate(){
   var all=['ck1','ck2','ck3','ck4','ck5'].every(function(id){return document.getElementById(id).checked});
@@ -527,7 +537,7 @@ document.getElementById('oveula-c').innerHTML=
       <div class="fcol"><h4>Support</h4><ul><li><a href="#faq">FAQ</a></li><li><a href="#" id="fmail">E-Mail schreiben</a></li></ul></div>
       <div class="fcol"><h4>Rechtliches</h4><ul><li><button onclick="om('ovi')">Impressum</button></li><li><a href="datenschutz.html">Datenschutz</a></li><li><button onclick="om('ova')">AGB</button></li><li><button onclick="om('ovw')">Widerruf</button></li><li><button onclick="om('oveula')">EULA</button></li></ul></div>
     </div>
-    <div class="fbot"><span class="fcp" id="fcp"></span><span class="fver" id="fver"></span></div>
+    <div class="fbot"><span style="display:inline-flex;align-items:center;gap:8px"><svg width="20" height="20" viewBox="0 0 64 64" style="flex-shrink:0"><rect width="64" height="64" rx="14" fill="#0E1A2E"/><path d="M 24,20 L 14,32 L 24,44" stroke="#4070FF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M 40,20 L 50,32 L 40,44" stroke="#9b30d0" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="35" y1="18" x2="29" y2="46" stroke="#00C4B0" stroke-width="4.5" stroke-linecap="round"/></svg><span class="fcp" id="fcp"></span></span><span class="fver" id="fver"></span></div>
   </div>
 </footer>
 
