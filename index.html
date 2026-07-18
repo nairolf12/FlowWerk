@@ -74,13 +74,28 @@ h1{font-size:clamp(2.4rem,5.5vw,4.2rem);font-weight:900;line-height:1.08;letter-
   box-shadow:0 24px 60px rgba(64,112,255,.15)}
 .pcard.disabled{opacity:.62}
 
-.pcard-logo{
-  max-width:200px;max-height:110px;width:auto;height:auto;
-  margin-bottom:26px;object-fit:contain;
-  filter:drop-shadow(0 8px 20px rgba(0,0,0,.35));
-  transition:transform .35s cubic-bezier(.2,.8,.2,1);
+.pcard-bubble{
+  width:92px;height:92px;border-radius:26px;margin-bottom:22px;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.03));
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 1px 0 rgba(255,255,255,.14) inset,
+             0 -1px 0 rgba(0,0,0,.2) inset,
+             0 16px 32px rgba(0,0,0,.4);
+  transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;
 }
-.pcard.active:hover .pcard-logo{transform:translateY(-3px) scale(1.03)}
+.pcard.active:hover .pcard-bubble{
+  transform:translateY(-3px) scale(1.04);
+  box-shadow:0 1px 0 rgba(255,255,255,.18) inset,
+             0 -1px 0 rgba(0,0,0,.2) inset,
+             0 24px 44px rgba(64,112,255,.28);
+}
+.pcard-bubble img{width:46px;height:46px;object-fit:contain;
+  filter:drop-shadow(0 2px 4px rgba(0,0,0,.3))}
+.pcard-pname{font-size:1.35rem;font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.pcard-pname .g{background:var(--gradP);-webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;background-clip:text}
 .pcard-desc{font-size:.9rem;color:var(--t2);line-height:1.6;margin-bottom:22px;flex:1}
 
 .pbadge{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:700;
@@ -163,7 +178,8 @@ footer{border-top:1px solid var(--border);padding:48px 0 28px}
 
       <!-- finFlow: aktiv -->
       <a href="finflow.html" class="pcard active" aria-label="finFlow öffnen">
-        <img src="assets_finflow_logo.png" alt="finFlow" class="pcard-logo">
+        <div class="pcard-bubble"><img src="assets_finflow_logo_white.png" alt=""></div>
+        <div class="pcard-pname">fin<span class="g">Flow</span></div>
         <div class="pcard-desc">Buchhaltungssoftware für Kleingewerbe &mdash; Rechnungen,
           Angebote, Mahnwesen und EÜR-Export. Vollständig lokal, kein Abo.</div>
         <span class="pbadge live">&#9679; Verfügbar</span>
@@ -172,7 +188,8 @@ footer{border-top:1px solid var(--border);padding:48px 0 28px}
 
       <!-- stafFlow: individuell im Einsatz -->
       <div class="pcard disabled" aria-label="stafFlow – individuelle Auftragsentwicklung">
-        <img src="assets_stafflow_logo.png" alt="stafFlow" class="pcard-logo">
+        <div class="pcard-bubble"><img src="assets_stafflow_logo_white.png" alt=""></div>
+        <div class="pcard-pname">staf<span class="g">Flow</span></div>
         <div class="pcard-desc">Dienstplan-App für kleine Teams &mdash; individuell entwickelt
           und aktuell im Einsatz bei einem Partnerunternehmen.</div>
         <span class="pbadge custom">Individuallösung</span>
@@ -180,7 +197,8 @@ footer{border-top:1px solid var(--border);padding:48px 0 28px}
 
       <!-- docFlow: individuell im Einsatz -->
       <div class="pcard disabled" aria-label="docFlow – individuelle Auftragsentwicklung">
-        <img src="assets_docflow_logo.png" alt="docFlow" class="pcard-logo">
+        <div class="pcard-bubble"><img src="assets_docflow_logo_white.png" alt=""></div>
+        <div class="pcard-pname">doc<span class="g">Flow</span></div>
         <div class="pcard-desc">Zeiterfassung und Dienstplanung für Arztpraxen &mdash;
           individuell entwickelt und aktuell im Einsatz bei einer Partnerpraxis.</div>
         <span class="pbadge custom">Individuallösung</span>
