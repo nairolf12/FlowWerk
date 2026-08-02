@@ -63,8 +63,9 @@ h1{font-size:clamp(2.4rem,5.5vw,4.2rem);font-weight:900;line-height:1.08;letter-
 .pg-title{text-align:center;margin-bottom:56px}
 .pg-title h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;letter-spacing:-.03em;margin-bottom:12px}
 .pg-title p{color:var(--t2);font-size:1rem}
-.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-@media(max-width:900px){.pgrid{grid-template-columns:1fr;max-width:440px;margin:0 auto}}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media(max-width:1100px){.pgrid{grid-template-columns:repeat(2,1fr);max-width:700px;margin:0 auto}}
+@media(max-width:560px){.pgrid{grid-template-columns:1fr;max-width:400px}}
 
 .pcard{background:var(--s1);border:1px solid var(--border);border-radius:var(--r3);
   padding:36px 30px;display:flex;flex-direction:column;align-items:center;text-align:center;
@@ -103,6 +104,7 @@ h1{font-size:clamp(2.4rem,5.5vw,4.2rem);font-weight:900;line-height:1.08;letter-
 .pbadge.live{background:rgba(34,211,170,.1);color:var(--green);border:1px solid rgba(34,211,170,.3)}
 .pbadge.soon{background:rgba(255,186,66,.1);color:var(--amber);border:1px solid rgba(255,186,66,.3)}
 .pbadge.custom{background:rgba(64,112,255,.1);color:var(--blue2);border:1px solid rgba(64,112,255,.3)}
+.pbadge.progress{background:rgba(255,186,66,.1);color:var(--amber);border:1px solid rgba(255,186,66,.3)}
 
 .pcard-cta{margin-top:20px;font-size:.85rem;font-weight:700;color:var(--blue2);
   display:flex;align-items:center;gap:6px;opacity:0;transition:opacity .25s}
@@ -202,6 +204,15 @@ footer{border-top:1px solid var(--border);padding:48px 0 28px}
         <div class="pcard-desc">Zeiterfassung und Dienstplanung für Arztpraxen &mdash;
           individuell entwickelt und aktuell im Einsatz bei einer Partnerpraxis.</div>
         <span class="pbadge custom">Individuallösung</span>
+      </div>
+
+      <!-- packFlow: in Entwicklung -->
+      <div class="pcard disabled" aria-label="packFlow – in Entwicklung">
+        <div class="pcard-bubble"><img src="assets_packflow_logo_white.png" alt=""></div>
+        <div class="pcard-pname">pack<span class="g">Flow</span></div>
+        <div class="pcard-desc">Software paketieren und über MECM an Endgeräte
+          verteilen &mdash; aktuell in Entwicklung.</div>
+        <span class="pbadge progress">&#9679; In Arbeit</span>
       </div>
 
     </div>
