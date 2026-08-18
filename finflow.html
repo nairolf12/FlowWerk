@@ -310,7 +310,7 @@ footer{border-top:1px solid #1E2D42;padding:72px 0 0;background:#060A12}
 </head>
 <body>
 <script>
-const V={v:"3.4.0",date:"Juli 2026",dlMac:"downloads/finFlow-Installer-3_4_0.dmg",dlWin:"downloads/finFlow-Setup-3_4_0.exe",cl:"changelog.html",mail:"info@flow-werk.de",pubName:"Florian Haußmann",pubStreet:"Haldestra\u00dfe 8",pubCity:"72644 Oberboihingen",ust:"Gem\u00e4\u00df \u00a719 UStG wird keine Umsatzsteuer ausgewiesen."};
+const V={v:"3.5.0",date:"August 2026",dlMac:"downloads/finFlow-Installer-3_5_0.dmg",dlWin:"downloads/finFlow-Setup-3_5_0.exe",cl:"changelog.html",mail:"info@flow-werk.de",pubName:"Florian Haußmann",pubStreet:"Haldestra\u00dfe 8",pubCity:"72644 Oberboihingen",ust:"Gem\u00e4\u00df \u00a719 UStG wird keine Umsatzsteuer ausgewiesen."};
 
 function ckUpdate(){
   var all=['ck1','ck2','ck3','ck4','ck5'].every(function(id){return document.getElementById(id).checked});
@@ -611,8 +611,7 @@ document.getElementById('dlw').href=V.dlWin;
 document.getElementById('buybtn').removeAttribute('href');
 document.getElementById('buybtn').onclick=function(e){e.preventDefault();om('ock')};
 document.getElementById('buybtn').style.cursor='pointer';
-/* window._stripeUrl='https://buy.stripe.com/28E28t3xE727eB6gCUfQI00'; */
-window._stripeUrl='https://flow-werk.de/404.html'
+window._stripeUrl='https://buy.stripe.com/28E28t3xE727eB6gCUfQI00';
 document.getElementById('fmail').href='mailto:'+V.mail;
 document.getElementById('fcp').textContent='\u00a9 '+new Date().getFullYear()+' FlowWerk \u00b7 '+V.pubName;
 document.getElementById('fver').textContent='finFlow '+V.v;
