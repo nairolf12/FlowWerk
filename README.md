@@ -19,9 +19,12 @@ downloads/              ← Installer
 
 ## Neue Version veröffentlichen
 1. Neue Installer in `downloads/` ersetzen
-2. `V`-Block in `index.html` aktualisieren (v, dlMac, dlWin, date)
+2. `V`-Block in `index.html` aktualisieren (v, dlMac, dlWin, date) (Zeile 313)
 3. `CHANGELOG.md` und `changelog.html` aktualisieren
 4. Committen → GitHub Pages deployt automatisch
+
+## Sales Button aktivieren/deaktivieren
+1. const SALES_ENABLED=false; // <-- auf true setzen, um den Kaufen-Button wieder zu aktivieren (Zeile 611)
 
 ## Kontakt
 info@flow-werk.de · flow-werk.de · FlowWerk · Florian Haußmann
