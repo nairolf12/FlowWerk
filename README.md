@@ -25,6 +25,7 @@ downloads/              ← Installer
 
 ## Sales Button aktivieren/deaktivieren
 1. const SALES_ENABLED=false; // <-- auf true setzen, um den Kaufen-Button wieder zu aktivieren (Zeile 611)
+2. Committen
 
 ## Kontakt
 info@flow-werk.de · flow-werk.de · FlowWerk · Florian Haußmann
