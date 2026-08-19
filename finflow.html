@@ -608,9 +608,20 @@ document.querySelectorAll('.dvt').forEach(e=>e.textContent='finFlow '+V.v+' \u00
 document.querySelectorAll('.agbd').forEach(e=>e.textContent=V.date);
 document.getElementById('dlm').href=V.dlMac;
 document.getElementById('dlw').href=V.dlWin;
-document.getElementById('buybtn').removeAttribute('href');
-document.getElementById('buybtn').onclick=function(e){e.preventDefault();om('ock')};
-document.getElementById('buybtn').style.cursor='pointer';
+const SALES_ENABLED=false; // <-- auf true setzen, um den Kaufen-Button wieder zu aktivieren
+if(SALES_ENABLED){
+  document.getElementById('buybtn').removeAttribute('href');
+  document.getElementById('buybtn').onclick=function(e){e.preventDefault();om('ock')};
+  document.getElementById('buybtn').style.cursor='pointer';
+}else{
+  var bb=document.getElementById('buybtn');
+  bb.removeAttribute('href');
+  bb.textContent='Aktuell nicht verfügbar';
+  bb.style.pointerEvents='none';
+  bb.style.opacity='.5';
+  bb.style.cursor='default';
+  bb.onclick=function(e){e.preventDefault()};
+}
 window._stripeUrl='https://buy.stripe.com/28E28t3xE727eB6gCUfQI00';
 document.getElementById('fmail').href='mailto:'+V.mail;
 document.getElementById('fcp').textContent='\u00a9 '+new Date().getFullYear()+' FlowWerk \u00b7 '+V.pubName;
