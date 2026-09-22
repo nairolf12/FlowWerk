@@ -28,4 +28,4 @@ downloads/              ← Installer
 2. Committen
 
 ## Kontakt
-info@flow-werk.de · flow-werk.de · FlowWerk · Florian Haußmann
+info@flow-werk.de · flow-werk.de · flowWerk · Florian Haußmann

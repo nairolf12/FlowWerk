@@ -4,30 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<title>Seite nicht gefunden – FlowWerk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap">
+<title>Seite nicht gefunden – flowWerk</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
-  background:#060A12;color:#F0F4FF;min-height:100vh;display:flex;
+body{font-family:'Manrope',-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  background:#F6F7F4;color:#17212B;min-height:100vh;display:flex;
   flex-direction:column;align-items:center;justify-content:center;
   text-align:center;padding:32px;-webkit-font-smoothing:antialiased}
-.code{font-size:6rem;font-weight:900;letter-spacing:-.04em;
-  background:linear-gradient(135deg,#4070FF,#00C4B0);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+.code{font-size:6rem;font-weight:800;letter-spacing:-.04em;color:#17212B;
   line-height:1;margin-bottom:16px}
-h1{font-size:1.3rem;font-weight:700;margin-bottom:10px}
-p{color:#8899BB;font-size:.95rem;margin-bottom:32px;max-width:400px;line-height:1.7}
+h1{font-size:1.3rem;font-weight:700;margin-bottom:10px;color:#17212B}
+p{color:rgba(23,33,43,.64);font-size:.95rem;margin-bottom:32px;max-width:400px;line-height:1.7}
 a{display:inline-block;padding:13px 32px;border-radius:11px;
-  background:linear-gradient(135deg,#4070FF,#00C4B0);color:#fff;
-  text-decoration:none;font-weight:700;font-size:.95rem;transition:opacity .2s}
+  background:#17212B;color:#F6F7F4;
+  text-decoration:none;font-weight:700;font-size:.95rem;transition:opacity .2s;box-shadow:0 14px 32px rgba(23,33,43,.18)}
 a:hover{opacity:.87}
-.logo{position:fixed;top:24px;font-size:1.1rem;font-weight:800}
-.logo b{background:linear-gradient(135deg,#4070FF,#00C4B0);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.logo{position:fixed;top:28px;display:flex;align-items:center;gap:10px;font-size:1.1rem;letter-spacing:-.03em;color:#17212B}
+.logo b{font-weight:700}
 </style>
 </head>
 <body>
-<div class="logo">flow<b>Werk</b></div>
+<div class="logo">
+  <svg width="26" height="13" viewBox="3 -10 126 62" aria-hidden="true">
+    <path d="M4 12 C 16 12, 20 44, 32 44 C 44 44, 46 22, 58 22" fill="none" stroke="#17212B" stroke-width="14" stroke-linecap="butt"/>
+    <path d="M58 22 C 70 22, 72 44, 84 44 C 100 44, 106 8, 124 -4" fill="none" stroke="#19B8A6" stroke-width="14" stroke-linecap="butt"/>
+  </svg>
+  <span><b>flow</b>Werk</span>
+</div>
 <div class="code">404</div>
 <h1>Seite nicht gefunden</h1>
 <p>Die gesuchte Seite existiert nicht oder wurde verschoben.</p>

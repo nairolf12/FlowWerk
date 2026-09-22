@@ -1,56 +1,18 @@
-# finFlow – Versionshistorie
+# flow-werk.de – Website-Changelog
+
+Änderungen an der Website selbst (Design, Struktur, Deployment). Die
+funktionalen Änderungen der Software finFlow stehen ausschließlich in
+`changelog.html`.
 
 ---
 
-## Version 3.4.0 – Juli 2026
-**Aktuelles Release**
+## 2026-09-22
 
-- **Artikel-Import (CSV/Excel)** – bestehende Artikellisten lassen sich jetzt genau wie Kundenlisten bequem importieren, inklusive automatischer Erkennung bereits vorhandener Artikel
-- Dunkelmodus optisch überarbeitet – einheitlicheres, ruhigeres Erscheinungsbild
-- Scrollverhalten in der gesamten App spürbar verbessert, insbesondere bei Trackpad-Nutzung auf dem Mac
-- Kleinere Detailverbesserungen an der Seitenleiste
-
----
-
-## Version 3.3.0 – Juli 2026
-
-- **Onboarding-Assistent** – beim ersten Start führt ein kurzer Assistent durch die wichtigsten Einstellungen (Firmendaten, Bankverbindung, Logo)
-- **„Über finFlow"-Dialog** – zeigt Version, Lizenzstatus und Kontaktinfo auf einen Blick
-- Verbesserungen an der Benutzeroberfläche
-
----
-
-## Version 3.2.0 – Juli 2026
-
-- **Testversion** – finFlow kann vor dem Kauf kostenlos getestet werden (bis zu 5 Rechnungen, 3 Angebote)
-- PDFs in der Testversion enthalten einen Wasserzeichen-Hinweis
-- Einige Funktionen (Mahnwesen, EÜR-Export, Datensicherung) sind der Vollversion vorbehalten
-
----
-
-## Version 3.1.0 – Juli 2026
-
-- **Dunkelmodus** – vollständig dunkles Design wählbar
-- **Eigenes Logo** – importierbares Logo erscheint automatisch auf allen PDFs
-- **Dashboard** – Übersicht über offene Rechnungen, Umsatz und aktuelle Aktivitäten
-- **Lieferschein-PDF** – aus jeder Rechnung heraus erzeugbar
-- Diverse Stabilitäts- und Darstellungsverbesserungen
-
----
-
-## Version 2.0 – 2026
-
-- Angebotsverwaltung mit direkter Umwandlung in Rechnungen
-- Mahnwesen (1. und 2. Mahnung als PDF)
-- Rabatte pro Rechnungsposition
-- Plattformwechsel Mac ↔ Windows über Datensicherung
-- EÜR-Export als Excel und PDF
-
----
-
-## Version 1.0 – 2026
-
-- Erstes stabiles Release
-- Kundenverwaltung, Rechnungserstellung, PDF-Export
-- E-Mail-Versand direkt aus der App
-- Lokale SQLite-Datenbank, vollständig offline
+- Website auf die neue flowWerk Corporate Identity umgestellt: Farben,
+  Wellen-Logo, Manrope-Schrift und Layout auf allen Seiten (`index.html`,
+  `finflow.html`, `changelog.html`, `404.html`, `datenschutz.html`,
+  `datenschutz-flowwerk.html`) erneuert
+- `favicon.svg` und `og-image.png` neu erstellt (neues Logo/CI)
+- Ungenutzte alte Logo-Assets (`assets_*.png`) entfernt
+- `finflow.html`: Versionsbadge und Downloadlinks auf 3.6.1 aktualisiert
+- `changelog.html`: fehlende Versionen 3.5.1–3.6.1 nachgetragen
