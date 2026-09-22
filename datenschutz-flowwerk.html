@@ -25,6 +25,26 @@ h2{font-size:1.1rem;font-weight:700;margin:32px 0 8px;padding-top:8px;border-top
 h2:first-of-type{border-top:none;margin-top:0}
 p{color:rgba(23,33,43,.64);margin-bottom:12px;font-size:.92rem}
 a{color:#17212B;font-weight:600;text-decoration:underline;text-decoration-color:#19B8A6;text-decoration-thickness:2px;text-underline-offset:3px}
+
+/* Navigation im gleichen Stil wie die übrigen Seiten */
+.nav{backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);gap:14px}
+.nav-back{
+  display:inline-flex;align-items:center;gap:7px;padding:9px 16px;border-radius:999px;font-weight:600;
+  background:linear-gradient(150deg,rgba(255,255,255,.78),rgba(255,255,255,.48));
+  border:1px solid rgba(255,255,255,.75);
+  box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 12px 28px -20px rgba(23,33,43,.5);
+  transition:transform .3s cubic-bezier(.2,.8,.2,1),color .2s;
+}
+.nav-back:hover{transform:translateY(-2px)}
+@media(max-width:620px){
+  .nav{padding:12px 18px}
+  .nav-logo{font-size:1.04rem}
+  .nav-back{padding:8px 13px;font-size:.78rem}
+  .nav-back .long{display:none}
+  .wrap{padding-left:20px;padding-right:20px}
+  h1{font-size:1.6rem}
+}
+.nav-back .short{display:none}@media(max-width:620px){.nav-back .short{display:inline}}
 </style>
 </head>
 <body>
@@ -33,7 +53,7 @@ a{color:#17212B;font-weight:600;text-decoration:underline;text-decoration-color:
     <svg width="26" height="13" viewBox="3 -10 126 62" aria-hidden="true"><path d="M4 12 C 16 12, 20 44, 32 44 C 44 44, 46 22, 58 22" fill="none" stroke="#17212B" stroke-width="14" stroke-linecap="butt"/><path d="M58 22 C 70 22, 72 44, 84 44 C 100 44, 106 8, 124 -4" fill="none" stroke="#19B8A6" stroke-width="14" stroke-linecap="butt"/></svg>
     <span><b>flow</b>Werk</span>
   </a>
-  <a href="index.html" class="nav-back">&larr; Zurück zur Startseite</a>
+  <a href="index.html" class="nav-back">←<span class="long">&nbsp;Zurück zur Startseite</span><span class="short" style="margin-left:4px">Zurück</span></a>
 </nav>
 <div class="wrap">
   <h1>Datenschutzerklärung</h1>

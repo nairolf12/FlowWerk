@@ -6,6 +6,16 @@ funktionalen Änderungen der Software finFlow stehen ausschließlich in
 
 ---
 
+## 2026-09-22 (2)
+
+- Startseite neu gestaltet: Glasoberflächen, cursorgeführte Lichtreflexe und
+  3D-Neigung auf den Produktkarten, animiertes Wellen-Logo, Scroll-Reveals
+- Startseite um zwei Abschnitte ergänzt: Markensektion mit den vier CI-Werten
+  und ein Kontaktabschluss
+- `finflow.html` und `changelog.html` auf dieselbe Designsprache gehoben,
+  Footer dort auf Graphite Navy umgestellt
+- Datenschutzseiten: seitliches Scrollen auf schmalen Bildschirmen behoben
+
 ## 2026-09-22
 
 - Website auf die neue flowWerk Corporate Identity umgestellt: Farben,
