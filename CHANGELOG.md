@@ -26,6 +26,11 @@ funktionalen Änderungen der Software finFlow stehen ausschließlich in
   von manchen Diensten beim Teilen nicht aufgelöst), Bildmaße ergänzt
 - Neues `logo-512.png` (quadratisches Primärlogo) als `logo` in den
   strukturierten Daten statt des 1200×630-Banners
+- Produktabschnitt: Das nachgebaute Fenster „Rechnungsübersicht" ist entfernt —
+  diese Ansicht gibt es in finFlow nicht. An seiner Stelle steht jetzt ein
+  echter Screenshot der Ansicht „Belege & E-Rechnungen"
+  (`screenshot-belege.png`), das zugehörige Attrappen-CSS wurde entfernt
+- JSON-LD: beide Screenshots als `screenshot` hinterlegt
 - `screenshot-dashboard.png` erneuert: zeigt jetzt die Oberfläche nach dem
   Rebrand. Die Kundennamen sind durch Musterdaten ersetzt (auf einer
   öffentlichen Seite haben echte Kundennamen nichts verloren), die

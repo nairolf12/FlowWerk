@@ -322,26 +322,7 @@ h2{font-size:clamp(2rem,3.8vw,2.9rem);font-weight:700;line-height:1.12;letter-sp
   border-bottom:1px solid rgba(23,33,43,.08);
 }
 .ibt{flex:1;text-align:center;font-size:.71rem;color:var(--ink-3);font-weight:600;letter-spacing:.04em}
-.ibody{padding:24px}
-.itabs{display:flex;gap:4px;background:rgba(23,33,43,.05);border-radius:11px;padding:4px;margin-bottom:18px}
-.itab{flex:1;text-align:center;padding:8px;border-radius:8px;font-size:.66rem;font-weight:700;color:var(--ink-3)}
-.itab.a{background:#fff;color:var(--blue-deep);box-shadow:0 1px 3px rgba(23,33,43,.1)}
-.irow{
-  padding:14px 16px;margin-bottom:9px;border-radius:13px;
-  background:rgba(255,255,255,.72);border:1px solid rgba(23,33,43,.07);
-  transition:transform .35s var(--ease),box-shadow .35s var(--ease);
-}
-.irow:last-child{margin:0}
-.irow:hover{transform:translateX(3px);box-shadow:0 10px 24px -16px rgba(23,33,43,.4)}
-.irt{display:flex;justify-content:space-between;align-items:flex-start}
-.irn{font-size:.66rem;font-weight:700;color:var(--blue-deep);font-family:var(--mono)}
-.irna{font-size:.8rem;font-weight:700;color:var(--navy);margin-top:3px}
-.irdt{font-size:.63rem;color:var(--ink-3);margin-top:2px}
-.iram{font-size:.92rem;font-weight:800;color:var(--navy)}
-.irs{font-size:.58rem;font-weight:700;padding:3px 9px;border-radius:999px;margin-top:5px;display:inline-block;letter-spacing:.04em}
-.sp{background:rgba(59,130,246,.14);color:var(--blue-deep)}
 .pp{background:rgba(25,184,166,.16);color:var(--teal-deep)}
-.lp{background:rgba(220,76,92,.14);color:var(--red)}
 .ptxt .etag{margin-bottom:14px}
 .cl{display:flex;flex-direction:column;gap:15px}
 .ck{display:flex;align-items:flex-start;gap:13px}
@@ -618,7 +599,10 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
     "E-Rechnung empfangen (XRechnung, ZUGFeRD)",
     "Datensicherung und Plattformwechsel zwischen Mac und Windows"
   ],
-  "screenshot": "https://flow-werk.de/screenshot-dashboard.png",
+  "screenshot": [
+    "https://flow-werk.de/screenshot-dashboard.png",
+    "https://flow-werk.de/screenshot-belege.png"
+  ],
   "publisher": { "@id": "https://flow-werk.de/#organisation" },
   "author": { "@type": "Organization", "name": "flowWerk", "url": "https://flow-werk.de/" },
   "offers": {
@@ -753,13 +737,8 @@ function ckProceed(){
   <div class="c">
     <div class="ps">
       <div class="inv-prev r">
-        <div class="ibar"><span class="mdot" style="background:#FF5F57"></span><span class="mdot" style="background:#FFBD2E"></span><span class="mdot" style="background:#28C840"></span><span class="ibt">Rechnungs&uuml;bersicht</span></div>
-        <div class="ibody">
-          <div class="itabs"><div class="itab">Alle</div><div class="itab a">Offen</div><div class="itab">Bezahlt</div><div class="itab">&Uuml;berf&auml;llig</div></div>
-          <div class="irow"><div class="irt"><div><div class="irn">RE-2026-0012</div><div class="irna">Maier Design Studio</div><div class="irdt">01.07.2026 &middot; f&auml;llig 15.07.2026</div></div><div style="text-align:right"><div class="iram">840,00 &euro;</div><span class="irs sp">offen</span></div></div></div>
-          <div class="irow"><div class="irt"><div><div class="irn">RE-2026-0011</div><div class="irna">K&ouml;nig &amp; Co. GmbH</div><div class="irdt">15.06.2026 &middot; f&auml;llig 29.06.2026</div></div><div style="text-align:right"><div class="iram">1.590,00 &euro;</div><span class="irs pp">bezahlt</span></div></div></div>
-          <div class="irow"><div class="irt"><div><div class="irn">RE-2026-0010</div><div class="irna">Weber Architektur</div><div class="irdt">01.06.2026 &middot; f&auml;llig 15.06.2026</div></div><div style="text-align:right"><div class="iram">480,00 &euro;</div><span class="irs lp">&uuml;berf&auml;llig</span></div></div></div>
-        </div>
+        <div class="ibar"><span class="mdot" style="background:#FF5F57"></span><span class="mdot" style="background:#FFBD2E"></span><span class="mdot" style="background:#28C840"></span><span class="ibt">finFlow &mdash; Belege &amp; E-Rechnungen</span></div>
+        <img src="screenshot-belege.png" alt="finFlow &ndash; Belege und E-Rechnungen: ein importierter PDF-Beleg, bei dem Datum, Kategorie, Beschreibung und Betrag automatisch erkannt wurden" style="width:100%;display:block"/>
       </div>
       <div class="ptxt r r1">
         <div class="etag tc">Das Produkt</div>
