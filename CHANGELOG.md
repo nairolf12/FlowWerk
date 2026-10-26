@@ -26,6 +26,11 @@ funktionalen Änderungen der Software finFlow stehen ausschließlich in
   von manchen Diensten beim Teilen nicht aufgelöst), Bildmaße ergänzt
 - Neues `logo-512.png` (quadratisches Primärlogo) als `logo` in den
   strukturierten Daten statt des 1200×630-Banners
+- `screenshot-dashboard.png` erneuert: zeigt jetzt die Oberfläche nach dem
+  Rebrand. Die Kundennamen sind durch Musterdaten ersetzt (auf einer
+  öffentlichen Seite haben echte Kundennamen nichts verloren), die
+  macOS-Titelleiste ist abgeschnitten, weil die Seite einen eigenen
+  Fensterrahmen zeichnet
 
 ## 2026-09-22 (2)
 
