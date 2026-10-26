@@ -6,14 +6,11 @@ funktionalen Änderungen der Software finFlow stehen ausschließlich in
 
 ---
 
-## 2026-10-26 (2)
+## 2026-10-26
 
 - `finflow.html`: Versionsbadge, Downloadlinks und strukturierte Daten auf
   finFlow 3.6.2.2 aktualisiert
 - `changelog.html`: Versionen 3.6.2, 3.6.2.1 und 3.6.2.2 nachgetragen
-
-## 2026-10-26
-
 - Suchmaschinen-Grundlagen ergänzt: `canonical`-Tags auf allen indexierbaren
   Seiten, `lastmod` in der Sitemap, fehlende Meta-Descriptions nachgetragen
 - Strukturierte Daten als JSON-LD: `Organization` + `WebSite` auf der
@@ -21,6 +18,14 @@ funktionalen Änderungen der Software finFlow stehen ausschließlich in
   auf der finFlow-Seite
 - `finflow.html`: Open-Graph- und Favicon-Angaben ergänzt (fehlten dort)
 - `404.html`: auf `noindex` gesetzt
+- **Impressum korrigiert**: Die Straße war in `finflow.html` zweimal als
+  „Haldestraße" statt „Haldenstraße" hinterlegt (`pubStreet` und
+  Muster-Widerrufsformular) — betraf Impressum, Datenschutzhinweis und AGB
+  auf der Produktseite
+- `index.html`: `og:image` auf absolute URL umgestellt (relative Pfade werden
+  von manchen Diensten beim Teilen nicht aufgelöst), Bildmaße ergänzt
+- Neues `logo-512.png` (quadratisches Primärlogo) als `logo` in den
+  strukturierten Daten statt des 1200×630-Banners
 
 ## 2026-09-22 (2)
 
