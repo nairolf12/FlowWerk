@@ -7,6 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap">
+<meta name="description" content="Versionshistorie von finFlow: alle Änderungen, neuen Funktionen und Korrekturen – von Version 1.0 bis zur aktuellen Version 3.6.2.2.">
+<link rel="canonical" href="https://flow-werk.de/changelog.html">
 <title>Changelog &ndash; finFlow | flowWerk</title>
 <style>
 /* ============================================================
@@ -184,8 +186,32 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
     <h1>Versionshistorie</h1>
     <p class="sub">Alle &Auml;nderungen und Verbesserungen von finFlow im &Uuml;berblick.</p>
 <hr class="cl-hr">
-<h2>Version 3.6.1 – September 2026</h2>
+<h2>Version 3.6.2.2 – Oktober 2026</h2>
 <p class="cl-badge">&#9679; Live &middot; Aktuelle Version</p>
+<ul class="cl-list">
+<li><strong>„E-Rechnung/PDF importieren&ldquo; füllt die Felder jetzt selbst aus</strong> – bei einer gewöhnlichen Rechnungs-PDF werden Betrag, Datum und Lieferant vorgeschlagen, bisher blieb der Betrag bei 0</li>
+<li>Enthält die PDF keinen lesbaren Text (also einen reinen Scan), weist finFlow jetzt darauf hin, statt kommentarlos leere Felder zu zeigen</li>
+<li><strong>Behoben: Datumsangaben wurden als Betrag gelesen</strong> – auf einem Kassenbon ohne Summenzeile wurde aus „14.10.2026&ldquo; ein Betrag von 14,10 &euro;</li>
+<li>Rechnungsnummern mit Buchstaben davor (z.&nbsp;B. „RE-2026-7788&ldquo;) werden jetzt für die Beschreibung erkannt</li>
+</ul>
+<hr class="cl-hr">
+<h2>Version 3.6.2.1 – Oktober 2026</h2>
+<ul class="cl-list">
+<li><strong>Behoben: Beim Scrollen sprang die Ansicht zu weit</strong> – ein Rad-Tick bewegt die Seite jetzt um ein festes, ruhiges Stück statt um einen Fünftel der Fensterhöhe</li>
+<li><strong>Behoben: Scrollen wirkte auf mehrere Seiten gleichzeitig</strong> – im Hintergrund liegende Seiten wurden mitbewegt und standen beim nächsten Öffnen an einer willkürlichen Stelle</li>
+<li><strong>Texterkennung jetzt auch für PDF-Belege</strong> – Betrag, Datum und Lieferant werden beim Auswählen einer PDF am Handy automatisch vorgeschlagen</li>
+<li>Bei einer gescannten PDF (reines Bild ohne Text) läuft dieselbe Texterkennung wie bei einem Beleg-Foto</li>
+</ul>
+<hr class="cl-hr">
+<h2>Version 3.6.2 – Oktober 2026</h2>
+<ul class="cl-list">
+<li><strong>Belege lassen sich am Handy auch aus den Dateien wählen</strong> – neben „Beleg fotografieren&ldquo; gibt es jetzt „Datei vom Gerät wählen&ldquo;, z.&nbsp;B. für eine Rechnung, die per E-Mail kam, oder ein Foto aus der Galerie</li>
+<li>Unterstützt Fotos, PDF-Dateien und E-Rechnungen (XML); Fotos aus der Galerie durchlaufen wie gewohnt Zuschnitt und Texterkennung</li>
+<li>Bei einer per Handy gesendeten E-Rechnung werden Betrag, Datum und Lieferant automatisch ausgelesen – wie beim Import am Rechner</li>
+<li>PDF- und XML-Dateien werden unverändert übernommen, damit das Original für die Aufbewahrung erhalten bleibt</li>
+</ul>
+<hr class="cl-hr">
+<h2>Version 3.6.1 – September 2026</h2>
 <ul class="cl-list">
 <li><strong>Neues Erscheinungsbild</strong> – finFlow trägt jetzt das neue flowWerk-Design: klare Farben, neues Logo und neues App-Icon</li>
 <li>Neue Hausschrift Manrope für ein ruhigeres, besser lesbares Schriftbild – wird mitgeliefert, keine Installation nötig</li>

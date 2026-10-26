@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>finFlow – Buchhaltung für Kleingewerbe | flowWerk</title>
 <meta name="description" content="finFlow: lokale Buchhaltungssoftware für Kleingewerbe. Rechnungen, Angebote, Mahnwesen, EÜR-Export – ohne Cloud, ohne Abo, ohne Datenweitergabe.">
+<link rel="canonical" href="https://flow-werk.de/finflow.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="finFlow – Buchhaltung für Kleingewerbe">
+<meta property="og:description" content="Rechnungen, Angebote, Mahnwesen und EÜR-Export – vollständig lokal auf deinem Rechner. Keine Cloud. Kein Abo.">
+<meta property="og:image" content="https://flow-werk.de/og-image.png">
+<meta property="og:url" content="https://flow-werk.de/finflow.html">
+<meta property="og:site_name" content="flowWerk">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap">
@@ -585,10 +596,47 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   .logo path{stroke-dashoffset:0}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "finFlow",
+  "url": "https://flow-werk.de/finflow.html",
+  "applicationCategory": "FinanceApplication",
+  "applicationSubCategory": "Buchhaltungssoftware",
+  "operatingSystem": "macOS 11 Big Sur oder neuer, Windows 10, Windows 11",
+  "softwareVersion": "3.6.2.2",
+  "datePublished": "2026-10",
+  "inLanguage": "de-DE",
+  "description": "Lokale Buchhaltungssoftware für Kleingewerbe und Freiberufler: Rechnungen, Angebote, Lieferscheine, Mahnwesen, EÜR-Export und Belegerfassung per Smartphone. Läuft vollständig offline, ohne Cloud und ohne Abo.",
+  "featureList": [
+    "Rechnungen und Lieferscheine als PDF mit eigenem Logo",
+    "Angebote mit Umwandlung in Rechnungen",
+    "Mahnwesen mit 1. und 2. Mahnung",
+    "EÜR-Export als Excel und PDF",
+    "Belegerfassung per Smartphone-Kamera ohne Cloud",
+    "E-Rechnung empfangen (XRechnung, ZUGFeRD)",
+    "Datensicherung und Plattformwechsel zwischen Mac und Windows"
+  ],
+  "screenshot": "https://flow-werk.de/screenshot-dashboard.png",
+  "publisher": { "@id": "https://flow-werk.de/#organisation" },
+  "author": { "@type": "Organization", "name": "flowWerk", "url": "https://flow-werk.de/" },
+  "offers": {
+    "@type": "Offer",
+    "price": "69",
+    "priceCurrency": "EUR",
+    "category": "Einmallizenz",
+    "url": "https://flow-werk.de/finflow.html#pricing",
+    "availability": "https://schema.org/OutOfStock"
+  }
+}
+</script>
+<!-- Hinweis: Sobald der Verkauf wieder aktiv ist (SALES_ENABLED=true),
+     oben "OutOfStock" auf "https://schema.org/InStock" ändern. -->
 </head>
 <body>
 <script>
-const V={v:"3.6.1",date:"September 2026",dlMac:"downloads/finFlow-Installer-3.6.1.dmg",dlWin:"downloads/finFlow-Setup-3.6.1.exe",cl:"changelog.html",mail:"info@flow-werk.de",pubName:"Florian Haußmann",pubStreet:"Haldestra\u00dfe 8",pubCity:"72644 Oberboihingen",ust:"Gem\u00e4\u00df \u00a719 UStG wird keine Umsatzsteuer ausgewiesen."};
+const V={v:"3.6.2.2",date:"Oktober 2026",dlMac:"downloads/finFlow-Installer-3.6.2.2.dmg",dlWin:"downloads/finFlow-Setup-3.6.2.2.exe",cl:"changelog.html",mail:"info@flow-werk.de",pubName:"Florian Haußmann",pubStreet:"Haldestra\u00dfe 8",pubCity:"72644 Oberboihingen",ust:"Gem\u00e4\u00df \u00a719 UStG wird keine Umsatzsteuer ausgewiesen."};
 
 function ckUpdate(){
   var all=['ck1','ck2','ck3','ck4','ck5'].every(function(id){return document.getElementById(id).checked});

@@ -6,6 +6,22 @@ funktionalen Änderungen der Software finFlow stehen ausschließlich in
 
 ---
 
+## 2026-10-26 (2)
+
+- `finflow.html`: Versionsbadge, Downloadlinks und strukturierte Daten auf
+  finFlow 3.6.2.2 aktualisiert
+- `changelog.html`: Versionen 3.6.2, 3.6.2.1 und 3.6.2.2 nachgetragen
+
+## 2026-10-26
+
+- Suchmaschinen-Grundlagen ergänzt: `canonical`-Tags auf allen indexierbaren
+  Seiten, `lastmod` in der Sitemap, fehlende Meta-Descriptions nachgetragen
+- Strukturierte Daten als JSON-LD: `Organization` + `WebSite` auf der
+  Startseite, `SoftwareApplication` (inkl. Preis und Systemvoraussetzungen)
+  auf der finFlow-Seite
+- `finflow.html`: Open-Graph- und Favicon-Angaben ergänzt (fehlten dort)
+- `404.html`: auf `noindex` gesetzt
+
 ## 2026-09-22 (2)
 
 - Startseite neu gestaltet: Glasoberflächen, cursorgeführte Lichtreflexe und
