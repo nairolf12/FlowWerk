@@ -1,6 +1,6 @@
-# finFlow · Produktwebsite
+# flowWerk · Website
 
-Statische Website für finFlow – gehostet via GitHub Pages unter flow-werk.de
+Statische Website für sumFlow – gehostet via GitHub Pages unter flow-werk.de
 
 ## Dateien
 ```

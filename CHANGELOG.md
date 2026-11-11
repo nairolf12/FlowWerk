@@ -1,10 +1,33 @@
 # flow-werk.de – Website-Changelog
 
 Änderungen an der Website selbst (Design, Struktur, Deployment). Die
-funktionalen Änderungen der Software finFlow stehen ausschließlich in
+funktionalen Änderungen der Software sumFlow stehen ausschließlich in
 `changelog.html`.
 
 ---
+
+## 2026-11-11
+
+- Beide Produkt-Screenshots gegen Aufnahmen aus sumFlow 3.7.0 getauscht
+  (`screenshot-dashboard.png`, `screenshot-belege.png`)
+- Kundennamen in beiden Screenshots durch Musternamen ersetzt, Kennzahlen
+  im Dashboard durch Musterwerte — passend zur Mini-Vorschau in Kachel 01
+  (Offen 2.430 €, Überfällig 480 €, Umsatz 11.840 €)
+
+## 2026-11-06
+
+- **Produkt umbenannt: finFlow heißt ab Version 3.7.0 sumFlow.** Alle Seiten,
+  Titel, Meta-Angaben, strukturierten Daten und Schriftzüge umgestellt
+- Produktseite liegt jetzt unter `sumflow.html`; unter `finflow.html` steht
+  eine Weiterleitungsseite (Meta-Refresh, JavaScript und `canonical` auf die
+  neue Adresse), damit alte Links und Lesezeichen weiter funktionieren
+- `changelog.html`: Eintrag zu 3.7.0 ergänzt, Badge verschoben; Einträge bis
+  3.6.2.2 nennen weiterhin finFlow, weil sie unter diesem Namen erschienen
+  sind — dazu ein Hinweis unter der Überschrift
+- `sumflow.html`: Version 3.7.0, Downloadpfade auf `sumFlow-Installer-3.7.0.dmg`
+  und `sumFlow-Setup-3.7.0.exe`, `softwareVersion` und `datePublished` im
+  JSON-LD nachgezogen
+- `sitemap.xml` auf die neue Adresse umgestellt
 
 ## 2026-10-26
 
