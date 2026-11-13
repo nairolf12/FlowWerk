@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="flowWerk – die Entwicklungsschmiede aus Oberboihingen. Schlanke, lokale Apps und Tools für kleine Teams und Selbstständige: sumFlow, stafFlow, docFlow und packFlow.">
+<meta name="description" content="flowWerk – die Entwicklungsschmiede aus Oberboihingen. Schlanke, lokale Apps und Tools für kleine Teams und Selbstständige: sumFlow, stafFlow, docFlow und packFlow. Dazu Websites für kleine Betriebe.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="favicon.svg">
 <meta property="og:type" content="website">
@@ -294,6 +294,42 @@ h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:700;letter-spacing:-.032em;l
 .card:hover .go{opacity:1;transform:none}
 .card:hover .go svg{transform:translateX(4px)}
 
+/* ==================== WEBSITES (Dienstleistung) ==================== */
+.svc{padding-top:0}
+.svc-card{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;
+  position:relative;overflow:hidden;padding:54px 48px;border-radius:var(--r-xl);
+  background:var(--glass);border:1px solid var(--glass-brd);
+  backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);
+  box-shadow:var(--glass-shadow);
+  transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .4s var(--ease);
+}
+.svc-card::after{
+  content:"";position:absolute;top:0;left:18%;right:18%;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.95),transparent);
+}
+.svc-card:hover{
+  transform:translateY(-5px);border-color:rgba(25,184,166,.34);
+  box-shadow:var(--glass-shadow-hi),0 36px 64px -34px rgba(25,184,166,.5);
+}
+.svc-card h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:14px}
+.svc-card p{color:var(--ink-2);font-size:1rem;line-height:1.74;max-width:520px}
+.svc-go{display:inline-flex;align-items:center;gap:8px;margin-top:26px;font-size:.92rem;font-weight:700;color:var(--teal-deep)}
+.svc-go svg{width:15px;height:15px;transition:transform .4s var(--ease)}
+.svc-card:hover .svc-go svg{transform:translateX(5px)}
+.svc-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+.svc-list li{
+  display:flex;align-items:center;gap:13px;padding:15px 18px;border-radius:var(--r-s);
+  background:rgba(255,255,255,.55);border:1px solid rgba(23,33,43,.06);
+  font-size:.92rem;font-weight:600;color:var(--navy);
+}
+.svc-list svg{width:19px;height:19px;flex-shrink:0;color:var(--teal-deep)}
+@media(max-width:940px){
+  .svc-card{grid-template-columns:1fr;gap:34px;padding:44px 32px}
+  .svc-card p{max-width:none}
+}
+@media(max-width:560px){.svc-card{padding:38px 24px}}
+
 /* ========================= MARKE (Navy) ========================= */
 .brand{
   position:relative;overflow:hidden;color:var(--on-navy);
@@ -424,7 +460,15 @@ footer::before{
         "addressCountry": "DE"
       },
       "areaServed": { "@type": "Country", "name": "Deutschland" },
-      "knowsAbout": ["Buchhaltungssoftware", "Einsatzplanung", "Software-Deployment", "Individualsoftware"]
+      "knowsAbout": ["Buchhaltungssoftware", "Einsatzplanung", "Software-Deployment", "Individualsoftware", "Webdesign", "Websites für kleine Betriebe"],
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Website-Erstellung und -Pflege",
+          "url": "https://flow-werk.de/websites.html"
+        }
+      }
     },
     {
       "@type": "WebSite",
@@ -452,10 +496,11 @@ footer::before{
     </a>
     <ul class="nav-links">
       <li><a href="#produkte">Produkte</a></li>
+      <li><a href="websites.html">Websites</a></li>
       <li><a href="#marke">Über uns</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
-    <a href="mailto:info@flow-werk.de" class="nav-cta">Kontakt<span class="long">&nbsp;aufnehmen</span></a>
+    <a href="mailto:info@flow-werk.de" class="nav-cta"><span>Kontakt<span class="long">&nbsp;aufnehmen</span></span></a>
   </div>
 </nav>
 
@@ -527,7 +572,7 @@ footer::before{
         </div>
         <div class="p-name"><b>staf</b><span>Flow</span></div>
         <p class="p-desc">Einsatzplanung und Teamorganisation &mdash; individuell entwickelt
-          und aktuell Live im Einsatz bei einem Partnerunternehmen.</p>
+          und aktuell im Einsatz bei einem Partnerunternehmen.</p>
         <span class="pill">Individuallösung</span>
         <span class="go" aria-hidden="true"></span>
       </div>
@@ -537,9 +582,8 @@ footer::before{
           <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M14 3 H26 V14 H37 V26 H26 V37 H14 V26 H3 V14 H14 Z" fill="#F6F7F4"/></svg>
         </div>
         <div class="p-name"><b>doc</b><span>Flow</span></div>
-        <p class="p-desc">Organisations- und Mitarbeiter-Tool für Arztpraxen. Dienstplanung,
-          Urlaub, Zeiterfassung und Unterweisungen an einem Ort. &mdash; 
-          aktuell im Einsatz in einer Praxis als Pilotprojekt.</p>
+        <p class="p-desc">Organisations- und Mitarbeiter-Tool für Arztpraxen &mdash; Dienstplanung,
+          Urlaub, Zeiterfassung und Unterweisungen an einem Ort.</p>
         <span class="pill">Individuallösung</span>
         <span class="go" aria-hidden="true"></span>
       </div>
@@ -549,13 +593,45 @@ footer::before{
           <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 L36 11 V29 L20 37 L4 29 V11 Z" fill="#F6F7F4"/><path d="M4 11 L20 19 L36 11 M20 19 V37" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linejoin="round"/></svg>
         </div>
         <div class="p-name"><b>pack</b><span>Flow</span></div>
-        <p class="p-desc">Software paketieren mit PSADT und bestehende Pakete auf Updates prüfen. &mdash;
+        <p class="p-desc">Software paketieren und über MECM an Endgeräte verteilen &mdash;
           aktuell in Entwicklung.</p>
         <span class="pill">In Arbeit</span>
         <span class="go" aria-hidden="true"></span>
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- ========================= WEBSITES ========================= -->
+<section class="section svc" id="websites">
+  <div class="c">
+    <a href="websites.html" class="svc-card rv" aria-label="Websites – mehr erfahren">
+      <div>
+        <div class="eyebrow">Dienstleistung</div>
+        <h2>Außerdem: Websites<br>für kleine Betriebe</h2>
+        <p>Neben den eigenen Produkten baut flowWerk Websites &mdash; schlanke, schnelle
+          Seiten für Handwerk, Praxen, Vereine und Kleingewerbe. Ohne Baukasten und ohne
+          Technik, die jeden Monat gewartet werden will. Diese Seite hier ist genau so gebaut.</p>
+        <span class="svc-go">Was dazugehört
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg>
+        </span>
+      </div>
+      <ul class="svc-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="16" rx="2.4"/><path d="M2.5 9h19"/><path d="M6 13h6"/></svg>
+          Neue Website
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 10A8.5 8.5 0 0 0 5.6 6.2"/><path d="M3.5 14a8.5 8.5 0 0 0 14.9 3.8"/><path d="M20.5 3.5V10h-6.5"/><path d="M3.5 20.5V14H10"/></svg>
+          Bestehende Seite überarbeiten
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.6-3 8.1-7 9.5-4-1.4-7-4.9-7-9.5V6z"/><path d="M8.8 12.2l2.2 2.2 4.2-4.4"/></svg>
+          Pflege und Hosting
+        </li>
+      </ul>
+    </a>
   </div>
 </section>
 
@@ -633,6 +709,7 @@ footer::before{
         <p class="f-tag">Apps. Tools. Alles im Flow.</p>
       </div>
       <div class="f-links">
+        <a href="websites.html">Websites</a>
         <button onclick="om('ovi')">Impressum</button>
         <a href="datenschutz-flowwerk.html">Datenschutz</a>
         <a href="mailto:info@flow-werk.de">Kontakt</a>

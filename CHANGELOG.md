@@ -6,6 +6,18 @@ funktionalen Änderungen der Software sumFlow stehen ausschließlich in
 
 ---
 
+## 2026-11-13
+
+- Neue Seite `websites.html`: Website-Erstellung als eigene Dienstleistung —
+  Leistungen (Neubau, Überarbeitung, Pflege und Hosting), Arbeitsweise, Ablauf
+  in vier Schritten, ein Abschnitt „wofür ich der Richtige bin und wofür nicht",
+  Preise auf Anfrage, Kontakt per E-Mail mit vorbereitetem Betreff
+- Startseite: neuer Abschnitt `#websites` unter dem Produktraster mit Verweis
+  auf die neue Seite, dazu Einträge in Navigation und Fußzeile
+- Startseite: Meta-Description erweitert, `knowsAbout` und `makesOffer` in den
+  strukturierten Daten ergänzt
+- `sitemap.xml` um `websites.html` erweitert
+
 ## 2026-11-11
 
 - Beide Produkt-Screenshots gegen Aufnahmen aus sumFlow 3.7.0 getauscht
