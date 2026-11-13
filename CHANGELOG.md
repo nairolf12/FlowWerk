@@ -6,6 +6,14 @@ funktionalen Änderungen der Software sumFlow stehen ausschließlich in
 
 ---
 
+## 2026-11-13 (4)
+
+- Hosting-Modell klargestellt: Vertrag und Domain laufen beim Kunden, flowWerk
+  richtet ein und betreut. „Pflege und Hosting" heißt deshalb überall „Pflege
+  und Betreuung" — `websites.html` (Leistungskarte, Aufzählung, Kontaktblock,
+  strukturierte Daten), `index.html` und `links.html`
+- `websites.html`: Formulierung „Auf Wunsch liegt die Seite bei mir" entfernt
+
 ## 2026-11-13 (3)
 
 - `links.html` auf denselben variablen Schriftschnitt umgestellt wie die
