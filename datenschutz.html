@@ -4,13 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap">
+<link rel="preload" href="fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <meta name="description" content="Datenschutzerklärung zu sumFlow und flow-werk.de: keine Tracking-Cookies, keine Analyse-Tools, lokale Datenverarbeitung.">
 <link rel="canonical" href="https://flow-werk.de/datenschutz.html">
 <title>Datenschutzerklärung – sumFlow | flowWerk</title>
 <style>
+/* ------------------------------------------------------------------
+   Manrope – lokal gehostet, SIL Open Font License 1.1 (fonts/Manrope-OFL.txt)
+   Bewusst keine Einbindung von Google Fonts: so wird beim Seitenaufruf
+   keine IP-Adresse der Besucher an Dritte übertragen.
+   Variabler Schnitt, deckt die Strichstärken 200 bis 800 ab.
+   ------------------------------------------------------------------ */
+@font-face{
+  font-family:'Manrope';font-style:normal;font-display:swap;font-weight:200 800;
+  src:url(fonts/manrope-latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:'Manrope';font-style:normal;font-display:swap;font-weight:200 800;
+  src:url(fonts/manrope-latin-ext-wght-normal.woff2) format('woff2-variations');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Manrope',-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,Arial,sans-serif;
      background:#F6F7F4;color:#17212B;line-height:1.8;-webkit-font-smoothing:antialiased}
@@ -71,6 +86,7 @@ footer a{color:rgba(23,33,43,.46)}
 
   <h2>2. Erhebung und Verarbeitung von Daten auf dieser Website</h2>
   <p>Diese Website verwendet keine Tracking-Cookies, keine Web-Analyse-Tools und keine eingebetteten Drittdienste. Beim Aufruf werden technisch bedingte Server-Logfiles verarbeitet, um den sicheren Betrieb zu gewährleisten.</p>
+  <p>Die verwendete Schriftart (Manrope, SIL Open Font License) wird vom selben Server ausgeliefert wie die Seite. Es besteht keine Verbindung zu Google Fonts oder einem anderen externen Schriftdienst, es wird also auch keine IP-Adresse dorthin übertragen.</p>
   <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO.</p>
 
   <h2>3. Kontaktaufnahme per E-Mail</h2>

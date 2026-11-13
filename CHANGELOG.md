@@ -6,6 +6,25 @@ funktionalen Änderungen der Software sumFlow stehen ausschließlich in
 
 ---
 
+## 2026-11-13 (3)
+
+- `links.html` auf denselben variablen Schriftschnitt umgestellt wie die
+  übrigen Seiten. Die drei statischen Dateien `fonts/manrope-latin-400-`,
+  `-600-` und `-700-normal.woff2` werden nicht mehr gebraucht und müssen im
+  Repo gelöscht werden — das Entpacken des Pakets entfernt sie nicht
+- Im Ordner `fonts/` liegen damit genau zwei Schriftdateien und der Lizenztext
+
+## 2026-11-13 (2)
+
+- **Schriftart lokal eingebunden.** Manrope lag bisher bei Google Fonts; bei
+  jedem Seitenaufruf ging die IP-Adresse der Besucher dorthin. Jetzt liefert
+  der eigene Server die Schrift aus (`fonts/`, variabler woff2-Schnitt für die
+  Strichstärken 200–800, SIL Open Font License). Betrifft alle acht Seiten;
+  die `preconnect`- und Stylesheet-Verweise auf fonts.googleapis.com und
+  fonts.gstatic.com sind ersatzlos entfallen
+- Beide Datenschutzerklärungen: Absatz zur Schriftauslieferung ergänzt. Die
+  Aussage „keine eingebetteten Drittdienste" stimmt damit jetzt auch
+
 ## 2026-11-13
 
 - Neue Seite `websites.html`: Website-Erstellung als eigene Dienstleistung —
