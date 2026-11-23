@@ -6,6 +6,31 @@ funktionalen Änderungen der Software sumFlow stehen ausschließlich in
 
 ---
 
+## 2026-11-23
+
+- **sumFlow 3.8.0** auf der Produktseite: Versionsangaben, Download-Links
+  (`sumFlow-Installer-3.8.0.dmg`, `sumFlow-Setup-3.8.0.exe`) und JSON-LD
+- `changelog.html`: Einträge 3.8.0 und 3.7.1 ergänzt (3.7.1 war auf der Seite
+  noch nicht nachgetragen), Badge „Aktuelle Version" auf 3.8.0
+- `sumflow.html`: neuer Abschnitt „PDFs aus einem Guss" mit den vier
+  Beispiel-PDFs (Rechnung, Angebot, Mahnung, Lieferschein) als Bilder unter
+  `beispiele/`; der interne Hinweis „assets/logo.png ersetzen" im
+  Logo-Platzhalter ist auf den Bildern entfernt
+- Funktionskacheln: Dashboard mit Beträgen und Doppelklick, einheitliches
+  PDF-Layout, EÜR nach Zuflussprinzip, Sicherheitskopie vor Wiederherstellung
+- Testversion präzisiert: Wasserzeichen „TESTVERSION", Lieferscheine ebenfalls
+  nur in der Vollversion
+- **Update-Regel geändert:** statt „Updates für 12 Monate" gilt jetzt „alle
+  Updates der Hauptversion 3.x kostenlos, für 4.x neuer Schlüssel" — in
+  Preisen, Produkttext, FAQ, AGB §3 und EULA Ziffer 3
+- Lizenzschlüssel: Hinweis auf das neue Format (`SF1-`, digital signiert,
+  Aktivierung beim ersten Start oder unter Einstellungen › Lizenz)
+- FAQ: fünf neue Fragen (EÜR/Zuflussprinzip, Jahreswechsel, Kunden löschen,
+  kostenlose Updates, Schlüssel wird nicht angenommen); „Was passiert nach
+  12 Monaten?" entfällt, ebenso die Zusage einer vergünstigten Update-Lizenz
+- `README.md`: Ablauf „Neue Version veröffentlichen" auf `sumflow.html`
+  korrigiert
+
 ## 2026-11-13 (4)
 
 - Hosting-Modell klargestellt: Vertrag und Domain laufen beim Kunden, flowWerk

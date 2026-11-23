@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preload" href="fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<meta name="description" content="Versionshistorie von sumFlow: alle Änderungen, neuen Funktionen und Korrekturen – von Version 1.0 bis zur aktuellen Version 3.7.0.">
+<meta name="description" content="Versionshistorie von sumFlow: alle Änderungen, neuen Funktionen und Korrekturen – von Version 1.0 bis zur aktuellen Version 3.8.0.">
 <link rel="canonical" href="https://flow-werk.de/changelog.html">
 <title>Changelog &ndash; sumFlow | flowWerk</title>
 <style>
@@ -201,8 +201,36 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
     <h1>Versionshistorie</h1>
     <p class="sub">Alle &Auml;nderungen und Verbesserungen von sumFlow im &Uuml;berblick.<br><span style="color:rgba(23,33,43,.44)">Bis Version 3.6.2.2 hie&szlig; sumFlow &bdquo;finFlow&ldquo;.</span></p>
 <hr class="cl-hr">
-<h2>Version 3.7.0 – November 2026</h2>
+<h2>Version 3.8.0 – November 2026</h2>
 <p class="cl-badge">&#9679; Live &middot; Aktuelle Version</p>
+<ul class="cl-list">
+<li><strong>EÜR nach Zuflussprinzip</strong> – Einnahmen aus Rechnungen zählen jetzt erst, wenn sie bezahlt sind, und zwar im Jahr des Zahlungseingangs. Beim Markieren als „bezahlt&ldquo; fragt sumFlow dafür das Zahlungsdatum ab (Vorschlag: heute)</li>
+<li><strong>Neues, einheitliches PDF-Layout</strong> für Rechnung, Angebot, Mahnung und Lieferschein – alles bündig auf der Seite, Beträge rechtsbündig, vollständige Fußzeile und die Bankverbindung direkt beim Zahlungshinweis</li>
+<li><strong>Dashboard zeigt Beträge</strong> bei den letzten Aktivitäten – ein Doppelklick springt direkt zur Rechnung bzw. zum Angebot</li>
+<li><strong>Doppelklick öffnet das PDF</strong> in Rechnungen und Angeboten, im Mahnwesen die zuletzt erstellte Mahnung</li>
+<li><strong>Neu: „sumFlow beenden&ldquo;</strong> unten in der Seitenleiste – auch über ⌘Q bzw. Strg+Q</li>
+<li><strong>Datensicherung sicherer</strong> – vor dem Wiederherstellen legt sumFlow automatisch eine Kopie der aktuellen Daten ab, selbst gewählte Speicherorte bleiben erhalten</li>
+<li><strong>Lizenzschlüssel jetzt digital signiert</strong> und damit fälschungssicher</li>
+<li>Angebot → Rechnung: Die Rechnung trägt das heutige Datum, die Angebotsnotiz wird übernommen und – wie jede Notiz zur Rechnung – mitgedruckt</li>
+<li>Mengen mit Komma (2,5 statt 2.5), Mahnungen mit Anrede und Datum im deutschen Format, Lieferschein mit Kästchen zum Abhaken</li>
+<li>Handy-Belegerfassung prüft Betrag, Datum und Kategorie gründlicher</li>
+<li><strong>Behoben: Das Löschen eines Kunden mit Rechnungen führte zu einem Fehler</strong> und blockierte danach das Speichern – jetzt erscheint ein klarer Hinweis, der Kunde bleibt erhalten</li>
+<li><strong>Behoben: Die interne Notiz einer Rechnung ging beim Bearbeiten verloren</strong></li>
+<li><strong>Behoben: Sonderzeichen wie &lt; und &gt; fehlten in PDFs</strong>, z.&nbsp;B. in Firmennamen</li>
+<li>Behoben: Lange Absenderzeilen brachen im PDF-Kopf unschön um, Firmenkunden ohne Ansprechpartner hatten eine leere Adresszeile</li>
+<li>Behoben: Kundennamen mit Sonderzeichen wie „:&ldquo; oder „?&ldquo; ergaben unter Windows ungültige PDF-Dateinamen</li>
+</ul>
+<hr class="cl-hr">
+<h2>Version 3.7.1 – November 2026</h2>
+<ul class="cl-list">
+<li><strong>Behoben: Platzhalter in Angebots- und Rechnungs-E-Mails blieben ungefüllt</strong>, sobald die Vorlage einen unbekannten Platzhalter enthielt (z.&nbsp;B. {rechnungsnummer} in einer Angebots-Mail oder einen Tippfehler) – jetzt werden alle bekannten Platzhalter immer ersetzt</li>
+<li>Unbekannte Platzhalter bleiben sichtbar im Entwurf stehen, ein Hinweis nennt sie und zeigt die verfügbaren</li>
+<li>Groß-/Kleinschreibung bei Platzhaltern spielt keine Rolle mehr ({Kunde} = {kunde})</li>
+<li>Neue Platzhalter {datum} und {nummer} für Rechnungs- und Angebots-Mails</li>
+<li>Datumsangaben in E-Mails im deutschen Format (17.12.2026 statt 2026-12-17)</li>
+</ul>
+<hr class="cl-hr">
+<h2>Version 3.7.0 – November 2026</h2>
 <ul class="cl-list">
 <li><strong>finFlow heißt jetzt sumFlow</strong> – neuer Name, neues Logo und App-Icon, gewohnte Funktionen</li>
 <li><strong>Alle Daten werden beim ersten Start automatisch übernommen</strong> – Kunden, Rechnungen, Angebote, Belege, Einstellungen und Lizenzschlüssel</li>
